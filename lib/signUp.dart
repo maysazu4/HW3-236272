@@ -35,7 +35,7 @@ class SignUpButton extends StatelessWidget {
     );
   }
 
- }
+}
 
 class confirmPasswordSheet extends StatefulWidget {
   final userEmailController;
@@ -59,7 +59,7 @@ class _confirmPasswordSheetState extends State<confirmPasswordSheet> {
   final passwordController;
   bool _isValid = true;
 
-  _confirmPasswordState(this.emailController, this.passwordController);
+  _confirmPasswordSheetState(this.emailController, this.passwordController);
 
   @override
   Widget build(BuildContext context,) {

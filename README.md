@@ -1,16 +1,5 @@
-# hello_me
+1.The class used to implement the controller pattern in the snapping_sheet library is the SnappingSheetController class. It allows the developer to modify the rate and position of the snapping as well as to stop snapping altogether. It also reveals information regarding the widget to the developer such as its current position, current snapping position and whether or not the widget is currently snapping.
 
-A new Flutter project.
+2.The SnappingPosition class recieves a snappingCurve argument which decides the animation the sheet uses when snapping into a position.
 
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+3.GestureDetector provides more gesture control such as dragging, while Inkwell primarily supports simple taps. On the other hand Inkwell is able to provide a ripple effect when its child is tapped.

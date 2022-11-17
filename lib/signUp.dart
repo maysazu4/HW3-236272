@@ -19,7 +19,7 @@ class SignUpButton extends StatelessWidget {
             context: context,
             isScrollControlled: true,
             builder: (context) {
-              return PasswordConfirmSheet(
+              return confirmPasswordSheet(
                 userEmailController: userEmailController,
                 userPasswordController: userPasswordController,
               );
@@ -37,29 +37,29 @@ class SignUpButton extends StatelessWidget {
 
  }
 
-class PasswordConfirmSheet extends StatefulWidget {
+class confirmPasswordSheet extends StatefulWidget {
   final userEmailController;
   final userPasswordController;
 
 
-  PasswordConfirmSheet(
+  confirmPasswordSheet(
       {Key? key, required this.userEmailController, required this.userPasswordController})
       : super(key: key);
 
   @override
-  _PasswordConfirmSheetState createState() =>
-      _PasswordConfirmSheetState(userEmailController, userPasswordController);
+  _confirmPasswordSheetState createState() =>
+      _confirmPasswordSheetState(userEmailController, userPasswordController);
 
 
 }
 
-class _PasswordConfirmSheetState extends State<PasswordConfirmSheet> {
+class _confirmPasswordSheetState extends State<confirmPasswordSheet> {
   final _confirmController = TextEditingController();
   final emailController;
   final passwordController;
   bool _isValid = true;
 
-  _PasswordConfirmSheetState(this.emailController, this.passwordController);
+  _confirmPasswordState(this.emailController, this.passwordController);
 
   @override
   Widget build(BuildContext context,) {
